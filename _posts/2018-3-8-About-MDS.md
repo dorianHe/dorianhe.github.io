@@ -1,3 +1,7 @@
+---
+layout: post
+title: Intro to Multidimensional Scaling
+---
 # What is MDS
 ## Introduction
 Before we start to talk about Multidimensional Scaling(MDS). Let's first consider one simple problem from middle school math textbook, 
