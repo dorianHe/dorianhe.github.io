@@ -65,8 +65,7 @@ Step:
 2. Determine the m largest eigenvalues ![equation](http://latex.codecogs.com/svg.latex?%5Clambda_1%2C%20%5Clambda_2%2C%20%5Clambda_3%2C%20...%20%2C%20%5Clambda_m) and corresponding eigenvectors ![equations](http://latex.codecogs.com/svg.latex?e_1%2C%20e_2%2C%20...%20%2C%20e_m) of ![equation](http://latex.codecogs.com/svg.latex?B),
 where ![equation](http://latex.codecogs.com/svg.latex?m) is the desired number of dimensions for the out.
 
-3. Calculate ![equation](http://latex.codecogs.com/svg.latex?X%20%3D%20E_m%5CLambda_m%5E%7B%5Cfrac%7B1%7D%7B2%7D%7D)
-
+3. Calculate ![equation](http://latex.codecogs.com/svg.latex?X%20%3D%20E_m%5CLambda_m%5E%7B%5Cfrac%7B1%7D%7B2%7D%7D), where ![equation](http://latex.codecogs.com/svg.latex?E_m) is the matrix of eigenvectors and ![equation](http://latex.codecogs.com/svg.latex?%5CLambda_m) is the diagonal matrix of ![equation](http://latex.codecogs.com/svg.latex?m) eigenvalues of ![equation](http://latex.codecogs.com/svg.latex?B), respectively.
 ## Metric MDS
 
 ## Non-metric MDS
