@@ -44,11 +44,11 @@ The classicial MDS is also known as Principal Coordinates Analysis(PCoA).
 
 # Classical MDS
 
-**Given:**
+**Given**
 
 ![equation](https://latex.codecogs.com/svg.latex?D%5E2%28X%29%20%3D%20%5Cbegin%7Bbmatrix%7D%200%20%26%20d%5E2_%7B12%7D%20%26%20d%5E2_%7B13%7D%20%26%20...%20%26%20d%5E2_%7B1n%7D%5C%5C%20d%5E2_%7B21%7D%20%26%200%20%26%20d%5E2_%7B23%7D%20%26%20...%20%26%20d%5E2_%7B2n%7D%5C%5C%20...%20%26%20...%20%26%20...%20%26%20...%20%26%20...%5C%5C%20d%5E2_%7Bn1%7D%20%26%20d%5E2_%7Bn2%7D%20%26%20d%5E2_%7Bn3%7D%20%26%20...%20%26%200%5C%5C%20%5Cend%7Bbmatrix%7D)
 
-**Goal:**
+**Goal**
 
 ![equation](http://latex.codecogs.com/svg.latex?X%20%3D%20%5Cbegin%7Bbmatrix%7D%20x_%7B11%7D%20%26%20x_%7B12%7D%20%26%20x_%7B13%7D%20%26%20...%20%26%20x_%7B1m%7D%5C%5C%20x_%7B21%7D%20%26%20x_%7B22%7D%20%26%20x_%7B23%7D%20%26%20...%20%26%20x_%7B2m%7D%5C%5C%20...%20%26%20...%20%26%20...%20%26%20...%20%26%20...%20%5C%5C%20x_%7Bn1%7D%20%26%20x_%7Bn2%7D%20%26%20x_%7Bn3%7D%20%26%20...%20%26%20x_%7Bnm%7D%20%5Cend%7Bbmatrix%7D)
 
