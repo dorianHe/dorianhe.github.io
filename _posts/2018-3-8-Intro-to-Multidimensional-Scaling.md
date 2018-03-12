@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Intro to classical Multidimensional Scaling
+title: Intro to Classical Multidimensional Scaling
 ---
 # What is classical MDS
 ## Introduction
