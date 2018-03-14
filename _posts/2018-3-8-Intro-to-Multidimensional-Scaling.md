@@ -81,7 +81,7 @@ The property of centering matrix we are going to use here is that by multiplicat
 
 The result of ![equation](https://latex.codecogs.com/svg.latex?-\frac{1}{2}JDJ) is
 
-![equation](http://latex.codecogs.com/svg.latex?\begin{align*}&space;-\frac{1}{2}JDJ&space;&=&space;-\frac{1}{2}J(\vec{a}*\vec{e}^T&space;&plus;&space;\vec{e}*\vec{a}^T&space;-&space;2XX^T)J&space;\\&space;&=&space;-\frac{1}{2}J\vec{a}*\vec{e}^TJ&space;-&space;-\frac{1}{2}J&space;\vec{e}*\vec{a}^TJ&space;&plus;J&space;XX^TJ&space;\\&space;&=&space;XX^T\\&space;\end{align*})
+![equation](http://latex.codecogs.com/svg.latex?%5Cbegin%7Balign*%7D%20-%5Cfrac%7B1%7D%7B2%7DJDJ%20%26%3D%20-%5Cfrac%7B1%7D%7B2%7DJ%28%5Cvec%7Ba%7D*%5Cvec%7Be%7D%5ET%20&plus;%20%5Cvec%7Be%7D*%5Cvec%7Ba%7D%5ET%20-%202XX%5ET%29J%20%5C%5C%20%26%3D%20-%5Cfrac%7B1%7D%7B2%7DJ%5Cvec%7Ba%7D*%5Cvec%7Be%7D%5ETJ%20-%20-%5Cfrac%7B1%7D%7B2%7DJ%20%5Cvec%7Be%7D*%5Cvec%7Ba%7D%5ETJ%20&plus;J%20XX%5ETJ%20%5C%5C%20%26%3D%20XX%5ET%5C%5C%20%5Cend%7Balign*%7D)
 
 Because 
 
