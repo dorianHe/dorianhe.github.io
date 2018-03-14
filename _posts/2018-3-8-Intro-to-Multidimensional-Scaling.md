@@ -79,9 +79,9 @@ Now we need to introduce one special matrix called centering matrix ![equation](
 
 The property of centering matrix we are going to use here is that by multiplication ![equation](https://latex.codecogs.com/svg.latex?JX), the mean from each of the columns in ![equation](https://latex.codecogs.com/svg.latex?X) will be removed and by multiplication ![equation](https://latex.codecogs.com/svg.latex?XJ), the mean from each of the rows in ![equation](https://latex.codecogs.com/svg.latex?X) will be removed.
 
-The result of ![equation](https://latex.codecogs.com/svg.latex?JDJ) is
+The result of ![equation](https://latex.codecogs.com/svg.latex?-\frac{1}{2}JDJ) is
 
-![equation](https://latex.codecogs.com/svg.latex?%5Cbegin%7Balign*%7D%20JDJ%20%26%3D%20J%28%5Cvec%7Ba%7D*%5Cvec%7Be%7D%5ET%20&plus;%20%5Cvec%7Be%7D*%5Cvec%7Ba%7D%5ET%20-%202XX%5ET%29J%20%5C%5C%20%26%3D%20J%5Cvec%7Ba%7D*%5Cvec%7Be%7D%5ETJ%20&plus;%20J%5Cvec%7Be%7D*%5Cvec%7Ba%7D%5ETJ%20-%202JXX%5ETJ%20%5C%5C%20%26%3D%20XX%5ET%20%5Cend%7Balign*%7D)
+![equation](http://latex.codecogs.com/svg.latex?\begin{align*}&space;-\frac{1}{2}JDJ&space;&=&space;-\frac{1}{2}J(\vec{a}*\vec{e}^T&space;&plus;&space;\vec{e}*\vec{a}^T&space;-&space;2XX^T)J&space;\\&space;&=&space;-\frac{1}{2}J\vec{a}*\vec{e}^TJ&space;-&space;-\frac{1}{2}J&space;\vec{e}*\vec{a}^TJ&space;&plus;J&space;XX^TJ&space;\\&space;&=&space;XX^T\\&space;\end{align*})
 
 Because 
 
