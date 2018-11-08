@@ -10,7 +10,6 @@ Let’s go back to the topic rejection sampling. It is a technique to generate o
 Here is the description of $p(z)$ in [1], *we are easily able to evaluate $p(z)$ for any given value of z, up to some normalizing constant Z, so that*
 
 $$p(z) = \frac{1}{Z_p}\tilde{p}(z)$$
-
 The interesting question is when we are in this situation. A known $\tilde{p}(z)$ is equal to some certain constant $Z_p$ times $p(z)$. To answer this question, we just need to check the Bayes' theorem.
 
 $$p(\theta| x) = \frac{p(x|\theta)p(\theta)}{p(x)}$$
