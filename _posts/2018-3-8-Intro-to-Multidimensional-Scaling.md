@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Intro to classical Multidimensional Scaling
+title: Intro to Classical Multidimensional Scaling
 ---
 # What is classical MDS
 ## Introduction
@@ -44,11 +44,11 @@ The classicial MDS is also known as Principal Coordinates Analysis(PCoA).
 
 # Classical MDS
 
-**Given:**
+**Given**
 
 ![equation](https://latex.codecogs.com/svg.latex?D%5E2%28X%29%20%3D%20%5Cbegin%7Bbmatrix%7D%200%20%26%20d%5E2_%7B12%7D%20%26%20d%5E2_%7B13%7D%20%26%20...%20%26%20d%5E2_%7B1n%7D%5C%5C%20d%5E2_%7B21%7D%20%26%200%20%26%20d%5E2_%7B23%7D%20%26%20...%20%26%20d%5E2_%7B2n%7D%5C%5C%20...%20%26%20...%20%26%20...%20%26%20...%20%26%20...%5C%5C%20d%5E2_%7Bn1%7D%20%26%20d%5E2_%7Bn2%7D%20%26%20d%5E2_%7Bn3%7D%20%26%20...%20%26%200%5C%5C%20%5Cend%7Bbmatrix%7D)
 
-**Goal:**
+**Goal**
 
 ![equation](http://latex.codecogs.com/svg.latex?X%20%3D%20%5Cbegin%7Bbmatrix%7D%20x_%7B11%7D%20%26%20x_%7B12%7D%20%26%20x_%7B13%7D%20%26%20...%20%26%20x_%7B1m%7D%5C%5C%20x_%7B21%7D%20%26%20x_%7B22%7D%20%26%20x_%7B23%7D%20%26%20...%20%26%20x_%7B2m%7D%5C%5C%20...%20%26%20...%20%26%20...%20%26%20...%20%26%20...%20%5C%5C%20x_%7Bn1%7D%20%26%20x_%7Bn2%7D%20%26%20x_%7Bn3%7D%20%26%20...%20%26%20x_%7Bnm%7D%20%5Cend%7Bbmatrix%7D)
 
@@ -79,9 +79,9 @@ Now we need to introduce one special matrix called centering matrix ![equation](
 
 The property of centering matrix we are going to use here is that by multiplication ![equation](https://latex.codecogs.com/svg.latex?JX), the mean from each of the columns in ![equation](https://latex.codecogs.com/svg.latex?X) will be removed and by multiplication ![equation](https://latex.codecogs.com/svg.latex?XJ), the mean from each of the rows in ![equation](https://latex.codecogs.com/svg.latex?X) will be removed.
 
-The result of ![equation](https://latex.codecogs.com/svg.latex?JDJ) is
+The result of ![equation](https://latex.codecogs.com/svg.latex?-\frac{1}{2}JDJ) is
 
-![equation](https://latex.codecogs.com/svg.latex?%5Cbegin%7Balign*%7D%20JDJ%20%26%3D%20J%28%5Cvec%7Ba%7D*%5Cvec%7Be%7D%5ET%20&plus;%20%5Cvec%7Be%7D*%5Cvec%7Ba%7D%5ET%20-%202XX%5ET%29J%20%5C%5C%20%26%3D%20J%5Cvec%7Ba%7D*%5Cvec%7Be%7D%5ETJ%20&plus;%20J%5Cvec%7Be%7D*%5Cvec%7Ba%7D%5ETJ%20-%202JXX%5ETJ%20%5C%5C%20%26%3D%20XX%5ET%20%5Cend%7Balign*%7D)
+![equation](http://latex.codecogs.com/svg.latex?%5Cbegin%7Balign*%7D%20-%5Cfrac%7B1%7D%7B2%7DJDJ%20%26%3D%20-%5Cfrac%7B1%7D%7B2%7DJ%28%5Cvec%7Ba%7D*%5Cvec%7Be%7D%5ET%20&plus;%20%5Cvec%7Be%7D*%5Cvec%7Ba%7D%5ET%20-%202XX%5ET%29J%20%5C%5C%20%26%3D%20-%5Cfrac%7B1%7D%7B2%7DJ%5Cvec%7Ba%7D*%5Cvec%7Be%7D%5ETJ%20-%20-%5Cfrac%7B1%7D%7B2%7DJ%20%5Cvec%7Be%7D*%5Cvec%7Ba%7D%5ETJ%20&plus;J%20XX%5ETJ%20%5C%5C%20%26%3D%20XX%5ET%5C%5C%20%5Cend%7Balign*%7D)
 
 Because 
 
