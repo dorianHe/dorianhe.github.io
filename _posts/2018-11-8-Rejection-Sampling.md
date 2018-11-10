@@ -2,7 +2,7 @@
 layout: post
 title: Rejection sampling
 ---
-This post is related with the seminar Mathematics of machine learning (the link of seminar) that I am taking this winter semester. In the seminar of this semester, the main topics is about sampling techniques. I am interested in this area. And since I am about to graduate and have plenty of free time. I decided to write some posts and also do some programming about what I learned in the seminar. 
+This post is related with the seminar [Mathematics of machine learning](https://www.mi.fu-berlin.de/en/math/groups/ag-math_machine_learning/teaching/machine-learning4.html) that I am taking this winter semester. In the seminar of this semester, the main topics is about sampling techniques. I am interested in this area. And since I am about to graduate and have plenty of free time. I decided to write some posts and also do some programming about what I learned in the seminar. 
 
 ## Problem scenario
 Let’s go back to the topic rejection sampling. It is a technique to generate observations from a distribution. We assume that there is a probability distribution $p(z)$. We want to sample from it. 
@@ -61,6 +61,8 @@ From the figure above, we see that the blue curve representing envolope distribu
 The figure below is 300 samples from $p(x)$.
 ![samples](/images/rejection_sampling/samples.png)
 Clearly, most samples are centered at the $x=-5$ and $x=3$. To make sure that the implementation is correct, we fit a mixture of Gaussian model from sklearn to these points. The result of fitting shows that the sampled mean is $-4.998$ and $2.999$. The sampled variance is $0.2525$ and $0.2434$.
+
+More detailed code is [here](https://github.com/dorianHe/math_of_machine_learning/blob/master/rejection_sampling.ipynb).
 
 ## References
 [1] Bishop
