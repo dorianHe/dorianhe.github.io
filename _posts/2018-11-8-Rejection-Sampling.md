@@ -8,10 +8,14 @@ This post is related with the seminar Mathematics of machine learning (the link 
 Let’s go back to the topic rejection sampling. It is a technique to generate observations from a distribution. We assume that there is a probability distribution $p(z)$. We want to sample from it. 
 
 Here is the description of $p(z)$ in [1], *we are easily able to evaluate $p(z)$ for any given value of z, up to some normalizing constant Z, so that*
+
 $$p(z) = \frac{1}{Z_p}\tilde{p}(z)$$
+
 The interesting question is when we are in this situation. A known $\tilde{p}(z)$ is equal to some certain constant $Z_p$ times $p(z)$. To answer this question, we just need to take a look at the Bayes' theorem.
+
 $$p(\theta| x) = \frac{p(x|\theta)p(\theta)}{p(x)}$$
-The left-hand side of equation is posterior $p(\theta| x)$ and it is proportional to the nominator on the left-hand side, since the denominator $p(x)$ is fixed in Bayesian inference.
+
+The left-hand side of equation is posterior $p(\theta| x)$ and it is proportional to the nominator $p(x|\theta)p(\theta)$ on the left-hand side, since the denominator $p(x)$ is fixed in Bayesian inference.
 
 ## Definitions and assumptions
 Assuming that we can only sample from some standard distributions $q(x)$, for example Gaussian distribution and uniform distribution. We call it proposal distribution.
