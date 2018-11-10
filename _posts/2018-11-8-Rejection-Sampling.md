@@ -47,8 +47,8 @@ The rejection sampling algorithm is:
 ## Experiments of implementation
 The figure shown below is the overview of rejection sampling scenario.
 ![overview](/images/rejection_sampling/overview.png)
-The orange dashed line is the probability distribution $p(x)$ that we want to sample from, which is a mixture of Gaussian.
 
+The orange dashed line is the probability distribution $p(x)$ that we want to sample from, which is a mixture of Gaussian.
 $$p(x) = \theta_1 N(\mu_1, \sigma_1^2) + \theta_2 N(\mu_2, \sigma_2^2)$$
 where $\theta_1 = 0.5, \mu_1 = -5, \sigma_1 = 0.5$ and $\theta_2 = 0.5, \mu_2 = -5, \sigma_2 = 0.5$. 
 
