@@ -59,7 +59,7 @@ The given distribution $\tilde{p}(x) = 2 * p(x)$. So the propose distribution $q
 From the figure above, we see that the blue curve representing envolope distribution $k * q(x)$ does cover the given distribution.
 
 The figure below is 300 samples from $p(x)$.
-![samples](/images/rejection_sampling/samples_from_p\(x\).png)
+![samples](/images/rejection_sampling/samples.png)
 Clearly, most samples are centered at the $x=-5$ and $x=3$. To make sure that the implementation is correct, we fit a mixture of Gaussian model from sklearn to these points. The result of fitting shows that the sampled mean is $-4.998$ and $2.999$. The sampled variance is $0.2525$ and $0.2434$.
 
 ## References
