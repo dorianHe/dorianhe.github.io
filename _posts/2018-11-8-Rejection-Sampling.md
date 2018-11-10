@@ -43,11 +43,26 @@ The rejection sampling algorithm is:
 
 ## Proof
 *TBD*
+
 ## Experiments of implementation
 The figure shown below is the overview of rejection sampling scenario.
 ![overview](/images/rejection_sampling/overview.png)
+The orange dashed line is the probability distribution $p(x)$ that we want to sample from, which is a mixture of Gaussian.
+
+$$p(x) = \theta_1 N(\mu_1, \sigma_1^2) + \theta_2 N(\mu_2, \sigma_2^2)$$
+where $\theta_1 = 0.5, \mu_1 = -5, \sigma_1 = 0.5$ and $\theta_2 = 0.5, \mu_2 = -5, \sigma_2 = 0.5$. 
+
+I chose small s.t.d for the target distribution so that most of the samples from this distribution will be clustered at the two means $\mu_1$ and $\mu_2$.
+
+The given distribution $\tilde{p}(x) = 2 * p(x)$. So the propose distribution $q(x)$ is a Gaussian distribution with $\mu = 0$ and $\sigma = 3.5$. Since the $Z = 2$, to make the envolope function covers the given distribution, $k = 20$.
+
+From the figure above, we see that the blue curve representing envolope distribution $k * q(x)$ does cover the given distribution.
+
+The figure below is 300 samples from $p(x)$.
+![samples](/images/rejection_sampling/samples from p(x).png)
+Clearly, most samples are centered at the $x=-5$ and $x=3$. To make sure that the implementation is correct, we fit a mixture of Gaussian model from sklearn to these points. The result of fitting shows that the sampled mean is $-4.998$ and $2.999$. The sampled variance is $0.2525$ and $0.2434$.
 
 ## References
 [1] Bishop
+
 [2] "Chapter 1". Bayesian Statistics
-*TBD*
