@@ -8,7 +8,7 @@ This post is related with the seminar [Mathematics of machine learning](https://
 ## Problem scenario
 Let’s go back to the topic rejection sampling. It is a technique to generate observations from a distribution. We assume that there is a probability distribution $p(z)$. We want to sample from it. 
 
-Here is the description of \(p(z)\) in [1], *we are easily able to evaluate $p(z)$ for any given value of z, up to some normalizing constant Z, so that*
+Here is the description of $p(z)$ in [1], *we are easily able to evaluate $p(z)$ for any given value of z, up to some normalizing constant Z, so that*
 
 $$p(z) = \frac{1}{Z_p}\tilde{p}(z)$$
 
@@ -16,7 +16,7 @@ The interesting question is when we are in this situation. A known $\tilde{p}(z)
 
 $$p(\theta| x) = \frac{p(x|\theta)p(\theta)}{p(x)}$$
 
-The left-hand side of equation is posterior $p(\theta| x)$ and it is proportional to the nominator $p(x|\theta)p(\theta)$ on the left-hand side, since the denominator $p(x)$ is fixed in Bayesian inference. In summary, the posterior is proportional to the prior times likelihood [2].
+<> (The left-hand side of equation is posterior $p(\theta| x)$ and it is proportional to the nominator $p(x|\theta)p(\theta)$ on the left-hand side, since the denominator $p(x)$ is fixed in Bayesian inference. In summary, the posterior is proportional to the prior times likelihood [2].)
 
 ## Definitions and assumptions
 Assuming that we can only sample from some standard distributions $q(x)$, for example Gaussian distribution and uniform distribution. We call it proposal distribution.
