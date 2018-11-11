@@ -2,6 +2,22 @@
 layout: post
 title: Rejection sampling
 ---
+
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    extensions: ["tex2jax.js"],
+    jax: ["input/TeX", "output/HTML-CSS"],
+    tex2jax: {
+      inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+      displayMath: [ ['$$','$$'], ["\\[","\\]"] ],
+      processEscapes: true
+    },
+    "HTML-CSS": { fonts: ["TeX"] }
+  });
+</script>
+<script type="text/javascript" src="path-to-MathJax/MathJax.js">
+</script>
+
 This post is related with the seminar [Mathematics of machine learning](https://www.mi.fu-berlin.de/en/math/groups/ag-math_machine_learning/teaching/machine-learning4.html) that I am taking this winter semester. In the seminar of this semester, the main topics is about sampling techniques. I am interested in this area. And since I am about to graduate and have plenty of free time. I decided to write some posts and also do some programming about what I learned in the seminar. 
 
 ## Problem scenario
