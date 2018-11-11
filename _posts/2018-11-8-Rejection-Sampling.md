@@ -12,7 +12,7 @@ Here is the description of $p(z)$ in \[1\], *we are easily able to evaluate $p(z
 
 $$p(z) = \frac{1}{Z_p}\tilde{p}(z)$$
 
-The interesting question is when we are in this situation. A known $\tilde{p}(z)$ is equal to some certain constant $Z_p$ times $p(z)$. To answer this question, we just need to take a look at the Bayes' theorem. $p(x)$ is a constant. The posterior is proportional to the prior times likelihood \[2\].
+The interesting question is when we are in this situation. A known $\tilde{p}(z)$ is equal to some certain constant $Z_p$ times $p(z)$. To answer this question, we just need to take a look at the Bayes' theorem. $p(x)$ is a constant. The posterior $p(\theta| x)$ is proportional to the prior $p(\theta)$ times likelihood $p(x|\theta)$ \[2\].
 
 $$p(\theta| x) = \frac{p(x|\theta)p(\theta)}{p(x)}$$
 
@@ -64,6 +64,6 @@ Clearly, most samples are centered at the $x=-5$ and $x=3$. To make sure that th
 More detailed code is [here](https://github.com/dorianHe/math_of_machine_learning/blob/master/rejection_sampling.ipynb).
 
 ## References
-[1] Bishop
+\[1\] Bishop, Christopher M. Pattern recognition and machine learning, 2006.
 
-[2] "Chapter 1". Bayesian Statistics
+\[2\] Lee, Peter M. Bayesian statistics. Arnold Publication, 1997. 
