@@ -14,9 +14,9 @@ $$p(z) = \frac{1}{Z_p}\tilde{p}(z)$$
 
 The interesting question is when we are in this situation. A known $\tilde{p}(z)$ is equal to some certain constant $Z_p$ times $p(z)$.  
 
-Actually Bayes\' theorem gives us one example. The evidence $p(x)$ is a constant. The posterior $p(\theta| x)$ is proportional to the prior $p(\theta)$ times likelihood $p(x \| \theta)$ \[2\].
+Actually Bayes\' theorem gives us one example. The evidence $p(x)$ is a constant. The posterior $p(\theta \| x)$ is proportional to the prior $p(\theta)$ times likelihood $p(x \| \theta)$ \[2\].
 
-$$p(\theta| x) = \frac{p(x|\theta)p(\theta)}{p(x)}$$
+$$p(\theta \| x) = \frac{p(x \| \theta)p(\theta)}{p(x)}$$
 
 ## Definitions and assumptions
 Assuming that we can only sample from some standard distributions $q(x)$, for example Gaussian distribution and uniform distribution. We call it proposal distribution.
@@ -45,11 +45,11 @@ The rejection sampling algorithm is:
 ## Proof
 Based on the previous algorithm detail section and law of total probability, we know that the probability of accept (abbreviated as $A$ in the following equations) is 
 
-$$ p(A) = \int p(A | z) q(z) dz = \int \frac{\tilde{p}(z)}{kq(z)}q(z) dz = \frac{Z}{k} $$
+$$ p(A) = \int p(A \| z) q(z) dz = \int \frac{\tilde{p}(z)}{kq(z)}q(z) dz = \frac{Z}{k} $$
 
 Using Bayes' theorem, we have 
 
-$$ p(z | A) = \frac{p(A | z) q(z)}{p(A)} = p(z) $$
+$$ p(z \| A) = \frac{p(A \| z) q(z)}{p(A)} = p(z) $$
 
 So the probability density or probability mass of accepted sample $z$ equal to the sample from desired probability distribution $p(z)$.
 
