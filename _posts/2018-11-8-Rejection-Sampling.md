@@ -12,7 +12,9 @@ Here is the description of $p(z)$ in \[1\], *we are easily able to evaluate $p(z
 
 $$p(z) = \frac{1}{Z_p}\tilde{p}(z)$$
 
-The interesting question is when we are in this situation. A known $\tilde{p}(z)$ is equal to some certain constant $Z_p$ times $p(z)$. To answer this question, we just need to take a look at the Bayes' theorem. $p(x)$ is a constant. The posterior $p(\theta| x)$ is proportional to the prior $p(\theta)$ times likelihood $p(x|\theta)$ \[2\].
+The interesting question is when we are in this situation. A known $\tilde{p}(z)$ is equal to some certain constant $Z_p$ times $p(z)$. 
+
+To answer this question, we just need to take a look at the Bayes' theorem. $p(x)$ is a constant. The posterior $p(\theta| x)$ is proportional to the prior $p(\theta)$ times likelihood $p(x|\theta)$ \[2\].
 
 $$p(\theta| x) = \frac{p(x|\theta)p(\theta)}{p(x)}$$
 
@@ -41,7 +43,15 @@ The rejection sampling algorithm is:
 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; $u_0$ is a sample from $p(z)$
 
 ## Proof
-*TBD*
+Based on the previous algorithm detail section and law of total probability, we know that the probability of accept (abbreviated as A in equation) is 
+
+$$ p(A) = \int p(A | z) q(z) dz = \int \frac{\tilde{p(z)}}{kq(z)}q(z) dz = \frac{Z}{k} $$
+
+Using Bayes' theorem, we have 
+
+$$ p(z | A) = \frac{p(A | z) p(z)}{p(A)} = p(z) $$
+
+So the probability density or probability mass of accepted sample $z$ equal to the sample from desired probability distribution $p(z)$.
 
 ## Experiments of implementation
 The figure shown below is the overview of rejection sampling scenario.
