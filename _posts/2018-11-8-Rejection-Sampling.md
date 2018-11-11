@@ -12,7 +12,7 @@ Here is the description of $p(z)$ in [1], *we are easily able to evaluate $p(z)$
 
 $$p(z) = \frac{1}{Z_p}\tilde{p}(z)$$
 
-The interesting question is when we are in this situation. A known $\tilde{p}(z)$ is equal to some certain constant $Z_p$ times $p(z)$. To answer this question, we just need to take a look at the Bayes' theorem. The left-hand side of equation is posterior $p(\theta| x)$ and it is proportional to the nominator $p(x|\theta)p(\theta)$ on the left-hand side, since the denominator $p(x)$ is fixed in Bayesian inference. In summary, the posterior is proportional to the prior times likelihood [2].
+The interesting question is when we are in this situation. A known $\tilde{p}(z)$ is equal to some certain constant $Z_p$ times $p(z)$. To answer this question, we just need to take a look at the Bayes' theorem. 
 $$p(\theta| x) = \frac{p(x|\theta)p(\theta)}{p(x)}$$
 
 ## Definitions and assumptions
