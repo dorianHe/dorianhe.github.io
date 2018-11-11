@@ -43,7 +43,7 @@ The rejection sampling algorithm is:
 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; $u_0$ is a sample from $p(z)$
 
 ## Proof
-Based on the previous algorithm detail section and law of total probability, we know that the probability of accept (abbreviated as A in equation) is 
+Based on the previous algorithm detail section and law of total probability, we know that the probability of accept (abbreviated as $A$ in the following equations) is 
 
 $$ p(A) = \int p(A | z) q(z) dz = \int \frac{\tilde{p}(z)}{kq(z)}q(z) dz = \frac{Z}{k} $$
 
