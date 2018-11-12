@@ -1,8 +1,7 @@
 ---
 layout: post
-title: Intro to Classical Multidimensional Scaling
+title: Classical Multidimensional Scaling
 ---
-# What is classical MDS
 ## Introduction
 Before we start to talk about classical Multidimensional Scaling(MDS). Let's first consider one simple problem from middle school math textbook, 
 given two cities coordinates (coordinates of Berlin and Hamburg for example) and how to find the squared distance between them.
