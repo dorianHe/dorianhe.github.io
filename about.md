@@ -8,7 +8,7 @@ Master student in CS department of FU Berlin, specialized in machine learning an
 
 ### More Information
 
-geek, enjoying learning math
+Enjoying learning math
 
 ### Contact me
 
