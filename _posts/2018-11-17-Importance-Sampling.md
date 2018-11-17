@@ -2,7 +2,7 @@
 layout: post
 title: Importance sampling
 ---
-This post is about importance sampling. Although it seems to be a sampling method as its name suggests, it is actually a method for estimating the expectation $\mathbb{E}$ of some certain function $f(z)$ w.r.t a probability distribution $p(z)$.
+This post is about importance sampling and sampling-importance-resampling. For importance sampling, although it seems to be a sampling method as its name suggests, it is actually a method for estimating the expectation $\mathbb{E}$ of some certain function $f(z)$ w.r.t a probability distribution $p(z)$.
 
 $$\mathbb{E}(f) = \int p(z) f(z) dz$$
 
@@ -20,13 +20,35 @@ $$\begin{align}
 & \approx  \frac{1}{L}\sum_{l = 1}^{L} \frac{p(z^{(l)})}{q(z^{(l)})} f(z^{(l)})
 \end{align}$$
 
-In this approximation, the samples $z$ for calculating $\mathbb{E}(f)$ are from propose distribution $q(z)$. Under the assumption that we can easily evaulate $\tilde{p}(z) = Z_p p(z)$ and $\tilde{q}(z) = Z_q q(z)$, we reformulate the equation $\mathbb{E}(f)$ again.
+In this approximation, the samples $z$ for calculating $\mathbb{E}(f)$ are from propose distribution $q(z)$. Under the assumption that we can easily evaulate $\tilde{p}(z) = Z_p p(z)$ and $\tilde{q}(z) = Z_q q(z)$, we reformulate the approximation of $\mathbb{E}(f)$ again.
 
 $$
 \begin{align}
 \frac{1}{L}\sum_{l = 1}^{L} \frac{p(z^{(l)})}{q(z^{(l)})} f(z^{(l)}) &= \sum_{l = 1}^{L} \frac{Z_p * \tilde{p}(z^{(l)})}{Z_q * \tilde{q}(z^{(l)})} f(z^{(l)}) \nonumber \\
 &= \frac{Z_q}{Z_p} \sum_{l = 1}^{L} \tilde{r_l}f(z^{(l)}) \\
+&= \frac{\sum_{l = 1}^{L} \tilde{r_l}f(z^{(l)})}{Z_p/Z_q}
 \end{align}
 $$
+
 where $\tilde{r_l} = \frac{\tilde{p}(z^{(l)})}{\tilde{q}(z^{(l)})}$.
 
+For $Z_p/Z_q$, we have
+$$
+\begin{align}
+\frac{Z_p}{Z_q} &= \int \frac{\tilde{p(z)}}{Z_q q(z)} q(z) dz \\
+&= \int \frac{\tilde{p(z)}}{\tilde{q(z)}} q(z) dz \\
+& \approx \frac{1}{L}\sum_{l=1}^{L}\tilde{r_l}
+\end{align}
+$$
+
+Based on the approximation of $Z_p/Z_q$ and $\mathbb{E}(f)$, we have 
+$$
+\begin{align}
+\mathbb{E}(f) & \approx \frac{\sum_{l = 1}^{L} \tilde{r_l}f(z^{(l)})}{\sum_{l=1}^{L}\tilde{r_l}} \\
+& \approx \sum_{l=1}^{L} w_l f(z^{(l)})
+\end{align}
+$$
+
+where $w_l = \frac{\tilde{r_l}}{\sum_{m=1}^{L}\tilde{r_m}}$.
+
+We call $r_l$ importance weight.
