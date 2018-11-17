@@ -19,4 +19,3 @@ $$\begin{align}
 &= \int f(z) \frac{p(z)}{q(z)} dz \\
 & \approx  \frac{1}{L}\sum_{l = 1}{L} \frac{p(z^{l})}{q(z^{(l)})} f(z^{(l)}) \label{equ:approx_e}
 \end{align}$$
-
