@@ -24,6 +24,7 @@ In this approximation, the samples $z$ for calculating $\mathbb{E}(f)$ are from 
 
 $$
 \begin{align}
-\frac{1}{L}\sum_{l = 1}^{L} \frac{p(z^{(l)})}{q(z^{(l)})} f(z^{(l)}) &= \sum_{l = 1}^{L} \frac{Z_p * \tilde{p}(z^{(l)})}{Z_q * \tilde{q}(z^{(l)})} f(z^{(l)})\\
+\frac{1}{L}\sum_{l = 1}^{L} \frac{p(z^{(l)})}{q(z^{(l)})} f(z^{(l)}) &= \sum_{l = 1}^{L} \frac{Z_p * \tilde{p}(z^{(l)})}{Z_q * \tilde{q}(z^{(l)})} f(z^{(l)}) \nonumber \\
+&= \frac{Z_p}{Z_q} \sum_{l = 1}^{L} \frac{\tilde{p}(z^{(l)})}{\tilde{q}(z^{(l)})}f(z^{(l)})
 \end{align}
 $$
