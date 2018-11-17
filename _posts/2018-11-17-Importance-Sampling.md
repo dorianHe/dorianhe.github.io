@@ -42,6 +42,7 @@ $$
 $$
 
 Based on the approximation of $Z_p/Z_q$ and $\mathbb{E}(f)$, we have 
+
 $$
 \begin{align}
 \mathbb{E}(f) & \approx \frac{\sum_{l = 1}^{L} \tilde{r_l}f(z^{(l)})}{\sum_{l=1}^{L}\tilde{r_l}} \\
@@ -49,6 +50,6 @@ $$
 \end{align}
 $$
 
-where $w_l = \frac{\tilde{r_l}}{\sum_{m=1}^{L}\tilde{r_m}}$.
+where $w_l = \frac{\tilde{r}\_l}{\sum_{m=1}^{L}\tilde{r}\_m}$.
 
 We call $r_l$ importance weight.
