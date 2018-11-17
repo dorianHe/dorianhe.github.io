@@ -32,7 +32,8 @@ $$
 
 where $\tilde{r_l} = \frac{\tilde{p}(z^{(l)})}{\tilde{q}(z^{(l)})}$.
 
-For $Z_p/Z_q$, we have
+We call $r_l$ importance weight. For $Z_p/Z_q$, we have
+
 $$
 \begin{align}
 \frac{Z_p}{Z_q} &= \int \frac{\tilde{p(z)}}{Z_q q(z)} q(z) dz \\
@@ -52,4 +53,9 @@ $$
 
 where $w_l = \frac{\tilde{r}\_l}{\sum_{m=1}^{L}\tilde{r}\_m}$.
 
-We call $r_l$ importance weight.
+One remark is that when using importance sampling, the propose distribution $q(z)$ is important. If the region where $p(z)* f(z)$ has large value doesn't match the region where samples from $q(z)$ are concentrated, the approximation may be quite wrong. For example, $f(z) = e^{|z|}$, $p(z) \sim \mathbb{N}(0, 3^2)$, $q(z) \sim \mathbb{N}(10, 1^2)$ and $Z_p = 4, Z_q = 2$. The figure below shows the general overview.
+![overview](/images/importance_sampling/general_overview.png)
+
+The approximation of using importance sampling is the y-axis value of the red point in the figure. It is also the title of the figure. The orange points are the sampled points $z$ from $q(z)$ and their corresponding $f(z)$.
+
+![overview](/images/importance_sampling/is_result.png)
