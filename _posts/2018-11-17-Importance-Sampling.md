@@ -2,7 +2,7 @@
 layout: post
 title: Importance sampling
 ---
-This post is about importance sampling. Although it seems to be a sampling method as its name suggests, it is actually a method for estimating the expectation of some certain function w.r.t a probability distribution.
+This post is about importance sampling. Although it seems to be a sampling method as its name suggests, it is actually a method for estimating the expectation $\mathbb{E}$ of some certain function $f(z)$ w.r.t a probability distribution $p(z)$.
 
 $$\mathbb{E}(f) = \int p(z) f(z) dz$$
 
@@ -17,5 +17,13 @@ As we do in rejection-sampling, in importance sampling we also have propose dist
 $$\begin{align}
 \mathbb{E}(f) &= \int f(z) p(z) dz \nonumber \\
 &= \int f(z) \frac{p(z)}{q(z)} dz \\
-& \approx  \frac{1}{L}\sum_{l = 1}{L} \frac{p(z^{(l)})}{q(z^{(l)})} f(z^{(l)}) \tag{equ:approx_e}
+& \approx  \frac{1}{L}\sum_{l = 1}^{L} \frac{p(z^{(l)})}{q(z^{(l)})} f(z^{(l)}) \label{equ:approx_e}
 \end{align}$$
+
+In this approximation, the samples $z$ for calculating $\mathbb{E}(f)$ are from propose distribution $q(z)$. Under the assumption that we can easily evaulate $\tilde{p}(z) = \frac{1}{Z_p}p(z)$ and $\tilde{1}(z) = \frac{1}{Z_1}q(z)$, we reformulate the equation $\mathbb{E}(f)$ again.
+
+$$
+\begin{align}
+\frac{1}{L}\sum_{l = 1}^{L} \frac{p(z^{(l)})}{q(z^{(l)})} f(z^{(l)}) \label{equ:approx_e} &= \sum_{l = 1}^{L} \frac{Z_p * \tilde{p}(z^{(l)})}{Z_q * \tilde{q}(z^{(l)})} f(z^{(l)})\\
+\end{align}
+$$
