@@ -50,6 +50,6 @@ $$
 \end{align}
 $$
 
-where $w_l = \frac{\tilde{r}_l}{\sum_{m=1}^{L}\tilde{r}_m}$.
+where $w_l = \frac{\tilde{r}\_l}{\sum_{m=1}^{L}\tilde{r}\_m}$.
 
 We call $r_l$ importance weight.
