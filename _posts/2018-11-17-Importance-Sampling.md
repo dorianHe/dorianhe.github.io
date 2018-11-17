@@ -2,7 +2,7 @@
 layout: post
 title: Importance sampling
 ---
-This post is about importance sampling and sampling-importance-resampling. For importance sampling, although it seems to be a sampling method as its name suggests, it is actually a method for estimating the expectation $\mathbb{E}$ of some certain function $f(z)$ w.r.t a probability distribution $p(z)$.
+This post is about importance sampling. For importance sampling, although it seems to be a sampling method as its name suggests, it is actually a method for estimating the expectation $\mathbb{E}$ of some certain function $f(z)$ w.r.t a probability distribution $p(z)$.
 
 $$\mathbb{E}(f) = \int p(z) f(z) dz$$
 
@@ -54,8 +54,17 @@ $$
 where $w_l = \frac{\tilde{r}\_l}{\sum_{m=1}^{L}\tilde{r}\_m}$.
 
 One remark is that when using importance sampling, the propose distribution $q(z)$ is important. If the region where $p(z)* f(z)$ has large value doesn't match the region where samples from $q(z)$ are concentrated, the approximation may be quite wrong. For example, $f(z) = e^{|z|}$, $p(z) \sim \mathbb{N}(0, 3^2)$, $q(z) \sim \mathbb{N}(10, 1^2)$ and $Z_p = 4, Z_q = 2$. The figure below shows the general overview.
+
 ![overview](/images/importance_sampling/general_overview.png)
 
 The approximation of using importance sampling is the y-axis value of the red point in the figure. It is also the title of the figure. The orange points are the sampled points $z$ from $q(z)$ and their corresponding $f(z)$.
 
-![overview](/images/importance_sampling/is_result.png)
+![wrong_result](/images/importance_sampling/is_result.png)
+
+If we choose $q(z) \sim \mathbb{N}(0, 1^2)$, then the approximation is much better.
+
+![better_result](/images/importance_sampling/better_result.png)
+
+More programming details are in this [notebook](https://github.com/dorianHe/math_of_machine_learning/blob/master/importance_sampling.ipynb)
+
+Based on the $r_l$ importance weights, there exists a method for sampling from desired distribution $p(x)$. It is called sampling-importance-resampling. It has a very important real-world application, particle filter. Since it is not a small topic, I am going to write another post about sampling-importance-resampling with some interesting applications using particle filter.
