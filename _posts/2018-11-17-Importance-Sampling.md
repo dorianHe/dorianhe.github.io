@@ -16,15 +16,19 @@ As we do in rejection-sampling, in importance sampling we also have propose dist
 
 $$\begin{align}
 \mathbb{E}(f) &= \int f(z) p(z) dz \nonumber \\
-&= \int f(z) \frac{p(z)}{q(z)} dz \\
+&= \int f(z) \frac{p(z)}{q(z)} q(z) dz \\
 & \approx  \frac{1}{L}\sum_{l = 1}^{L} \frac{p(z^{(l)})}{q(z^{(l)})} f(z^{(l)})
 \end{align}$$
 
-In this approximation, the samples $z$ for calculating $\mathbb{E}(f)$ are from propose distribution $q(z)$. Under the assumption that we can easily evaulate $\tilde{p}(z) = \frac{1}{Z_p}p(z)$ and $\tilde{1}(z) = \frac{1}{Z_1}q(z)$, we reformulate the equation $\mathbb{E}(f)$ again.
+In this approximation, the samples $z$ for calculating $\mathbb{E}(f)$ are from propose distribution $q(z)$. Under the assumption that we can easily evaulate $\tilde{p}(z) = Z_p p(z)$ and $\tilde{q}(z) = Z_q q(z)$, we reformulate the equation $\mathbb{E}(f)$ again.
 
 $$
 \begin{align}
 \frac{1}{L}\sum_{l = 1}^{L} \frac{p(z^{(l)})}{q(z^{(l)})} f(z^{(l)}) &= \sum_{l = 1}^{L} \frac{Z_p * \tilde{p}(z^{(l)})}{Z_q * \tilde{q}(z^{(l)})} f(z^{(l)}) \nonumber \\
-&= \frac{Z_p}{Z_q} \sum_{l = 1}^{L} \frac{\tilde{p}(z^{(l)})}{\tilde{q}(z^{(l)})}f(z^{(l)})
+&= \frac{Z_q}{Z_p} \sum_{l = 1}^{L} \tilde{r_l}f(z^{(l)}) \\
+&= \frac{\sum_{l = 1}^{L} \tilde{r_l}f(z^{(l)})\\}{Z_p/Z_q} \\
+&= 
 \end{align}
 $$
+where $\tilde{r_l} = \frac{\tilde{p}(z^{(l)})}{\tilde{q}(z^{(l)})}$.
+
