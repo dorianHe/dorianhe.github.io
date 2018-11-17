@@ -26,8 +26,6 @@ $$
 \begin{align}
 \frac{1}{L}\sum_{l = 1}^{L} \frac{p(z^{(l)})}{q(z^{(l)})} f(z^{(l)}) &= \sum_{l = 1}^{L} \frac{Z_p * \tilde{p}(z^{(l)})}{Z_q * \tilde{q}(z^{(l)})} f(z^{(l)}) \nonumber \\
 &= \frac{Z_q}{Z_p} \sum_{l = 1}^{L} \tilde{r_l}f(z^{(l)}) \\
-&= \frac{\sum_{l = 1}^{L} \tilde{r_l}f(z^{(l)})\\}{Z_p/Z_q} \\
-&= 
 \end{align}
 $$
 where $\tilde{r_l} = \frac{\tilde{p}(z^{(l)})}{\tilde{q}(z^{(l)})}$.
