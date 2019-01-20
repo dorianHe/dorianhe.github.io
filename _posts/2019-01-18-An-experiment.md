@@ -28,7 +28,7 @@ I have been using [OmniFocus](https://www.omnigroup.com/omnifocus/) for around 1
 
 Here are the good habits and bad habits in my playtask app.
 
-![Playtask image](https://github.com/dorianHe/dorianhe.github.io/blob/master/images/experiment/playtasklist.png)
+![Playtask image](/images/experiment/playtasklist.png)
 
 I do believe that using modern task management apps help people work and study more efficiently. But If a man has no self-discipline, no matter how apps are developed, he still doesn't have any control over his life.
 
