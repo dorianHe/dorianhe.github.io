@@ -28,31 +28,15 @@ I have been using [OmniFocus](https://www.omnigroup.com/omnifocus/) for around 1
 
 Here are the good habits and bad habits in my playtask app.
 
-| daily task | weekly task | desire list |
-|------------|-------------|-------------|
-| get up at 6:30 (+5)  | room cleaning (+2) | smoking 1 cigarette (-2)  |
-| turn off IPad at 22:00 (+2) | counting obtained points (+1) | play computer games for 30 mins (-30) |
-| 20 pushups (+1)  |   | video watching for 10 mins (-10)  |
-| eat vegetable salad (+1)|| using social app for 10 minutes (-10)|
-| go to Uni/office (+2)|| drink non sugarfree softdrinks 500 ml (-10) |
-| drink 1 Liter water (+1)|| watching gameing stream for 10 mins (-10)|
-| organize tasks to tomato list (+1)|||
-| read a book for 20 minutes (+1)|||
-| sleep before 23:00 (+5)|||
-| add daily cost to MoneyWitz (+2)|||
-| more than 6-hour productive hour (+6)|||
-| check ResueTime before sleep(+1)|||
+![Playtask image](/images/experiment/playtasklist.png)
 
 I started this system on the 17th of Jan. I will update this post after 1 week, 1 month and 3 months writing down the progress and feelings.
-
-
-======
-![Playtask image](/images/experiment/playtasklist.png)
 
 I do believe that using modern task management apps help people work and study more efficiently. But If a man has no self-discipline, no matter how apps are developed, he still doesn't have any control over his life.
 
 I started this system on the 17th of Jan. I will update this post after 1 week, 1 month and 3 months writing down the progress and feelings. Let's see. :)
 
 **Updates on 1st, Feb**
+
 Finally I got some time updating this post. In general, this system helps to me smoke less and drink more water everyday. It is still a bit hard for me to sleep early. But at least for now, this system works
 =
