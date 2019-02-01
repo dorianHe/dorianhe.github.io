@@ -36,7 +36,7 @@ I do believe that using modern task management apps help people work and study m
 
 I started this system on the 17th of Jan. I will update this post after 1 week, 1 month and 3 months writing down the progress and feelings. Let's see. :)
 
-**Updates on 1st, Feb**
+***Updates on 1st, Feb***
 
 Finally I got some time updating this post. In general, this system helps to me smoke less and drink more water everyday. It is still a bit hard for me to sleep early. But at least for now, this system works
 =
