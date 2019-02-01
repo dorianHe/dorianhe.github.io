@@ -44,3 +44,7 @@ Here are the good habits and bad habits in my playtask app.
 | check ResueTime before sleep(+1)|||
 
 I started this system on the 17th of Jan. I will update this post after 1 week, 1 month and 3 months writing down the progress and feelings.
+
+**Updates on 1st, Feb**
+
+Finally I got some time updating this post. In general, this system helps to me smoke less and drink more water everyday. It is still a bit hard for me to sleep early. But at least for now, this system works.
