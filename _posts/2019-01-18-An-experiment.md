@@ -39,4 +39,3 @@ I started this system on the 17th of Jan. I will update this post after 1 week, 
 ***Updates on 1st, Feb***
 
 Finally I got some time updating this post. In general, this system helps to me smoke less and drink more water everyday. It is still a bit hard for me to sleep early. But at least for now, this system works
-=
