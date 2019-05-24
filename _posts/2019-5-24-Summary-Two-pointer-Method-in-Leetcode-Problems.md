@@ -1,8 +1,7 @@
 ---
 layout: post
-title: Summary: Two-pointer method in Leetcode Problems
+title: Summary:Two-pointer method in Leetcode Problems
 ---
-
 Two-pointer is a quite common method used to solve Leetcode problems related with strings, arrays and linked lists. Usually the problems related with strings and arrays can be solved by brute force, which basically means your code searches all the possible solutions and returns the correct ones. However, this means a huge time cost, usually $O(n^2)$, $O(n^3)$ or worse. Leetcode will return LTE (Limited Time Exceed). Two-pointer method is an alternative. Depending on whether the input string / array is sorted or not, two-pointer method takes at $O(n*\log(n))$ time complexity or even better.
 
 Based on my current knowledge, two-pointer mainly has two variants. One is that both pointers start at the same side of the input string / array, usually the left side. This method is also called sliding window. Another is that two pointers start at different position. One starts at left, indexed 0. Another starts at right, indexed n-1, where n is the length of the string / array. And there are more tricky and interesting cases of two-pointer in linked list problems. In this post, I am going to introduce some typical examples of two-pointer problems and explain how to solve them.
