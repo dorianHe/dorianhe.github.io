@@ -91,4 +91,8 @@ To represent a cycle in the given linked list, we use an integer pos which repre
 
 the common corner case for linked-list is to consider the given head of the linked list is none or not. In this cycle detection, we need to check the head and its next. The solution of cyclic linked list problems is usually based on two-pointer. One is called fast. Another is called slow. In every iteration, the fast pointer moves every two-node-long step and the slow pointer moves every one-node-long step. If there exists a cycle in the linked list, then the slow and fast will arrive at the same node.
 
+A problem based on the same idea but totally different is Leetcode 287 Find the duplicate number. It can be done by binary search or two pointers (cycle detection).
+
+When handling with popping or inserting into the array, then we should be careful using two pointers, because the inserting and pop operation will influence the original index. Take a look at Leetcode problem Find K Closest Elements. If you use two pointer, then be careful.
+
 More problems solved by the two-pointer method will be updated in the summary part. Hope this post helps you. :)
