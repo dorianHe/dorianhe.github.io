@@ -1,6 +1,9 @@
 ---
 layout: post
 title: Rejection sampling
+card-image: /assets/images/rejection_sampling/overview.png
+abstract: rejection sampling example
+category: machine learning
 ---
 
 This post is related with the seminar [Mathematics of machine learning](https://www.mi.fu-berlin.de/en/math/groups/ag-math_machine_learning/teaching/machine-learning4.html) that I am taking this winter semester. In the seminar of this semester, the main topics is about sampling techniques. I am interested in this area. And since I am about to graduate and have plenty of free time. I decided to write some posts and also do some programming about what I learned in the seminar. 
@@ -55,7 +58,7 @@ So the probability density or probability mass of accepted sample $z$ equal to t
 
 ## Experiments of implementation
 The figure shown below is the overview of rejection sampling scenario.
-![overview](/images/rejection_sampling/overview.png)
+![overview](/assets/images/rejection_sampling/overview.png)
 
 The orange dashed line is the probability distribution $p(x)$ that we want to sample from, which is a mixture of Gaussian.
 $$p(x) = \theta_1 N(\mu_1, \sigma_1^2) + \theta_2 N(\mu_2, \sigma_2^2)$$

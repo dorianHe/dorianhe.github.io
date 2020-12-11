@@ -2,17 +2,20 @@
 layout: default
 ---
 
-<div class="posts">
-  {% for post in site.posts %}
-    <article class="post">
+{% for post in site.posts %}
+  <div class="wrapper-cards" onclick="location.href='{{ site.baseurl }}{{ post.url }}'">
+      <div class="post">
+        <div class="post-title">
+          <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
+        </div>
+        <div class="card-image">
+          <img class="card-image" src="{{ post.card-image }}">
+        </div>
+        <div class="post-abstract">{{ post.abstract }}</div>
 
-      <h1><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h1>
+        <div class="post-date"> {{post.date | date: "%F"}} </div>
+        <div class="post-category">{{ post.category }}</div>
 
-      <div class="entry">
-        {{ post.excerpt }}
       </div>
-
-      <a href="{{ site.baseurl }}{{ post.url }}" class="read-more">Read More</a>
-    </article>
-  {% endfor %}
-</div>
+  </div>
+{% endfor %}

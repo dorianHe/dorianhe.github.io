@@ -1,7 +1,13 @@
 ---
 layout: post
 title: Classical Multidimensional Scaling
+card-image: /assets/images/rejection_sampling/overview.png
+abstract: MDS example
+category: machine learning
 ---
+
+This post is about an dimension reduction method I used in my master thesis.
+
 ## Introduction
 Before we start to talk about classical Multidimensional Scaling(MDS). Let's first consider one simple problem from middle school math textbook, 
 given two cities coordinates (coordinates of Berlin and Hamburg for example) and how to find the squared distance between them.

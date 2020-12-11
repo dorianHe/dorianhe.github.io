@@ -1,0 +1,231 @@
+/* image avatar */
+img.avatar{
+  float: left;
+  width: 1cm;
+  height: 1cm;
+}
+
+/* header, page title */
+header{
+  margin: 0;
+  display: inline;
+  height: 100px;
+  width: 100%;
+  background-color: #ffffff;
+  position: fixed;
+  opacity: 0.9;
+  z-index: 999;
+}
+h1.site-name{
+  text-align: center;
+}
+h1.site-name>a{
+  text-decoration: none;
+  color: #000000;
+}
+h1.site-name>a:hover{
+  color: #4d4b4b;
+}
+h2.site-description{
+  font-size: small;
+  text-align: center;
+}
+div.site-info{
+  border-bottom: 1px solid #ccc;
+  color: #12679b;
+  margin: 1%;
+}
+
+/* body */
+body{
+  margin-top: 0;
+}
+
+/* nav bar */
+nav{
+  float: right;
+}
+nav>a{
+  text-decoration: none;
+  color: #000000;
+  font-size: large;
+  margin: 100px;
+  padding: 10px;
+}
+nav>a:hover{
+  font-size: large;
+  padding: 10px;
+  color: #4d4b4b;
+}
+/* homepage */
+div.page{
+  position: relative;
+  top: 95px;
+}
+
+/* homepags card layouts */
+div.wrapper-cards{
+  width: 320px;
+  height: 500px;
+  display: inline-block;
+  overflow: hidden;
+  border: 1px solid #ccc;
+  border-top: 8px solid #000000;
+  margin: 4%;
+  transition: border .15s;
+  background-color: #f3f1f1;
+}
+div.wrapper-cards:hover{
+  /* top: 2px;
+  position:relative; */
+  border: 2px solid #000000;
+  background-color: #e6e6e6;
+  border-radius: 10px;
+}
+.post-date{
+  margin: 0;
+  color: #4B4F56;
+  position: relative;
+  top: 3px;
+  text-align: center;
+  font-size: medium;
+  text-transform: uppercase;
+}
+div.wrapper-cards:hover .post-date{
+  visibility: hidden;
+}
+div.wrapper-cards:hover .post-title{
+  font-weight: bold;
+}
+.post-category{
+  visibility: hidden;
+}
+div.wrapper-cards:hover .post-category{
+  margin: 0px 3px 5px 3px;
+  color: #000000;
+  text-align: center;
+  font-size: small;
+  text-transform: uppercase;
+  visibility: visible;
+}
+div.post-title{
+  text-align: center;
+  font-size: large;
+  margin: 10px 15px 2px 15px;
+  padding: 15px;
+}
+div.post-title>a{
+  color: #000000;
+  font-family: Arial, Helvetica, sans-serif;
+  text-decoration: none; 
+}
+img.card-image{
+  margin-top: 5px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 10px;
+  display: block;
+  width: 80%;
+  height: 260px;
+}
+div.post-abstract{
+  margin: 20px 40px 20px 40px;
+  padding-bottom: 10px;
+  font-family: "Times New Roman", Times, serif;
+  font-size: medium;
+  text-align: left;
+  border-bottom: 1px solid #85878a;
+}
+
+/* post layouts */
+article.post{
+  margin-top: 50px;
+  display: inline-block;
+}
+h1.post-title{
+  margin-bottom: 5%;
+  font-size: 35px;
+  text-align: center;
+  font: LabGrotesque, helvetica, sans-serif;
+}
+div.entry{
+  margin: 0 20% 0 20%;
+}
+div.date{
+  margin: 100px 20% 30px 0;
+  font-style: italic;
+  font-size: 20px;
+  font-weight: 500;
+  color: #90949C;
+  text-align: right;
+}
+
+/* nav buttons for category */
+nav>button{
+  position: relative;
+  border: none;
+  margin-right: 30px;
+  padding: 20px 60px 10px 60px;
+}
+button:active{
+  background-color: #666;
+}
+/* category page card */
+div.category-wrapper-cards{
+  width: 320px;
+  height: 500px;
+  display: inline-block;
+  overflow: hidden;
+  border: 1px solid #ccc;
+  border-top: 8px solid #000000;
+  margin: 12%;
+  transition: border .15s;
+  background-color: #f3f1f1;
+}
+div.category-wrapper-cards:hover{
+  /* top: 2px;
+  position:relative; */
+  border: 2px solid #000000;
+  background-color: #e6e6e6;
+  border-radius: 10px;
+}
+div.category-wrapper-cards:hover .post-date{
+  visibility: hidden;
+}
+div.category-wrapper-cards:hover .post-title{
+  font-weight: bold;
+}
+.post-category{
+  visibility: hidden;
+}
+div.category-wrapper-cards:hover .post-category{
+  margin: 0px 3px 5px 3px;
+  color: #000000;
+  text-align: center;
+  font-size: small;
+  text-transform: uppercase;
+  visibility: visible;
+}
+/* button update with javascript */
+.filterDiv{
+  display: none;
+  overflow: hidden;
+  /* margin-top: 10px; */
+  margin: 1%;
+}
+
+.show {
+  display: inline-block;
+  width: 400px;
+  height: 600px;
+  overflow: hidden;
+  margin: 15px;
+}
+
+.btn.active {
+  background-color: #666;
+  color: white;
+}
+
+@import "highlights";
+@import "svg-icons";

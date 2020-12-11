@@ -1,0 +1,27 @@
+{%if page.url == "/category/" %}
+<div class="title-bar">
+    <a href="{{ site.baseurl }}/" class="site-avatar"><img class="avatar" src="{{ site.avatar }}" /></a>
+    <div class="site-info">
+        <h1 class="site-name"><a href="{{ site.baseurl }}/">{{ site.name }}</a></h1>
+    </div>
+</div>
+<nav id="myBtnContainer">
+    <button id="default" class="btn" onclick="filterSelection('all')"> Show all</button>
+    {% for category in site.categories%}
+    <button class="btn" onclick="filterSelection('{{category[0]}}')">{{category[0]}}</button>
+    {% endfor %}
+</nav>
+
+{% else %}
+<div class="title-bar">
+    <a href="{{ site.baseurl }}/" class="site-avatar"><img class="avatar" src="{{ site.avatar }}" /></a>
+    <div class="site-info">
+        <h1 class="site-name"><a href="{{ site.baseurl }}/">{{ site.name }}</a></h1>
+    </div>
+</div>
+<nav>
+    <!-- <a href="{{ site.baseurl }}/">Posts</a> -->
+    <a href="{{ site.baseurl }}/category">Categories</a>
+    <a href="{{ site.baseurl }}/about">About</a>
+</nav>
+{% endif %}
