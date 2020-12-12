@@ -2,8 +2,8 @@
 layout: post
 title: Rejection sampling
 card-image: /assets/images/rejection_sampling/overview.png
-abstract: rejection sampling example
-category: machine learning
+abstract: A technique to generate observations from a distribution.
+category: Machine Learning
 ---
 
 This post is related with the seminar [Mathematics of machine learning](https://www.mi.fu-berlin.de/en/math/groups/ag-math_machine_learning/teaching/machine-learning4.html) that I am taking this winter semester. In the seminar of this semester, the main topics is about sampling techniques. I am interested in this area. And since I am about to graduate and have plenty of free time. I decided to write some posts and also do some programming about what I learned in the seminar. 
@@ -57,6 +57,7 @@ $$ p(z | A) = \frac{p(A | z) q(z)}{p(A)} = p(z) $$
 So the probability density or probability mass of accepted sample $z$ equal to the sample from desired probability distribution $p(z)$.
 
 ## Experiments of implementation
+
 The figure shown below is the overview of rejection sampling scenario.
 ![overview](/assets/images/rejection_sampling/overview.png)
 
@@ -77,6 +78,7 @@ Clearly, most samples are centered at the $x=-5$ and $x=3$. To make sure that th
 More detailed code is [here](https://github.com/dorianHe/math_of_machine_learning/blob/master/rejection_sampling.ipynb).
 
 ## References
+
 \[1\] Bishop, Christopher M. Pattern recognition and machine learning, 2006.
 
 \[2\] Lee, Peter M. Bayesian statistics. Arnold Publication, 1997. 

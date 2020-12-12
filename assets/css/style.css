@@ -47,7 +47,7 @@ nav{
 }
 nav>a{
   text-decoration: none;
-  color: #000000;
+  color: #4d4b4b;
   font-size: large;
   margin: 100px;
   padding: 10px;
@@ -55,7 +55,7 @@ nav>a{
 nav>a:hover{
   font-size: large;
   padding: 10px;
-  color: #4d4b4b;
+  color: #000000;
 }
 /* homepage */
 div.page{
@@ -76,8 +76,6 @@ div.wrapper-cards{
   background-color: #f3f1f1;
 }
 div.wrapper-cards:hover{
-  /* top: 2px;
-  position:relative; */
   border: 2px solid #000000;
   background-color: #e6e6e6;
   border-radius: 10px;
@@ -165,11 +163,21 @@ nav>button{
   position: relative;
   border: none;
   margin-right: 30px;
+  top: 50%;
   padding: 20px 60px 10px 60px;
 }
-button:active{
-  background-color: #666;
+.btn{
+  padding: 0px;
+  font-size: medium;
+  background-color: #ffffff;
+  margin: 0px 50px 10px 50px;
+  color: #4d4b4b
 }
+.btn.active {
+  color: #000000;
+  font-weight: bold;
+}
+
 /* category page card */
 div.category-wrapper-cards{
   width: 320px;
@@ -221,11 +229,5 @@ div.category-wrapper-cards:hover .post-category{
   overflow: hidden;
   margin: 15px;
 }
-
-.btn.active {
-  background-color: #666;
-  color: white;
-}
-
 @import "highlights";
 @import "svg-icons";

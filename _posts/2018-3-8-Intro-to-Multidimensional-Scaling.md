@@ -1,9 +1,9 @@
 ---
 layout: post
 title: Classical Multidimensional Scaling
-card-image: /assets/images/rejection_sampling/overview.png
-abstract: MDS example
-category: machine learning
+card-image: /assets/images/mds/RecentVotes.png
+abstract: A method used to translate pairwise distances of n objects into n points in Cartesian space. (pic from <a href="https://en.wikipedia.org/wiki/Multidimensional_scaling" target="_blank">wiki</a>)
+category: Machine Learning
 ---
 
 This post is about an dimension reduction method I used in my master thesis.

@@ -1,9 +1,9 @@
 ---
 layout: post
 title: Two-pointer in Leetcode Problems
-card-image: /assets/images/rejection_sampling/overview.png
-abstract: two-pointer
-category: algorithm
+card-image: /assets/images/two_pointer/two_pointer.png
+abstract: A powerful method for solving string, array, linked list related problems in leetcode.
+category: Algorithm
 ---
 
 Two-pointer is a quite common method used to solve Leetcode problems related to strings, arrays and linked lists. Usually, the problems related to strings and arrays can be solved by brute force, which basically means your code searches all the possible solutions and returns the correct ones. However, this means a huge time cost, usually $O(n^2)$, $O(n^3)$ or worse. Leetcode will return LTE (Limited Time Exceed). The two-pointer method is an alternative. Depending on whether the input string/array is sorted or not, the two-pointer method takes at $O(n*\log(n))$ time complexity or even better.

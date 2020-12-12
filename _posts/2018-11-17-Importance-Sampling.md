@@ -2,8 +2,8 @@
 layout: post
 title: Importance sampling
 card-image: /assets/images/importance_sampling/is_result.png
-abstract: importance sampling example
-category: machine learning
+abstract: A general technique for estimating properties of a particular distribution, while only having samples generated from a different distribution.
+category: Machine Learning
 ---
 
 This post is about importance sampling. For importance sampling, although it seems to be a sampling method as its name suggests, it is actually a method for estimating the expectation $\mathbb{E}$ of some certain function $f(z)$ w.r.t a probability distribution $p(z)$.
