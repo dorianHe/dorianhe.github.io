@@ -39,7 +39,7 @@ Given a string, find the length of the longest substring without repeating chara
         return res
 ```
 
-When facing a problem related to counting the number of elements (characters/integers) in a string/list, think about the hash map! In the above problem, it is about distinct characters. We also need a hash map as a recorder to save the seen characters. 
+When facing a problem related to counting the number of elements (characters/integers) in a string/list, think about the hash map! In the above problem, it is about distinct characters. We also need a hash map as a recorder to save the seen characters.
 
 Both two pointers start at the character indexed 0. The ending condition is both pointers are at the last element of the string. During the iteration, pointer two $p2$ moves and check whether the currently visiting character exists in the hash map `occurrence_dict`. The idea is that we make sure the characters in substring s[p1:p2] (recorded in the hash map) are always distinct and save the maximal difference between p2 and p1. Each time p2 moves forward, we check whether s[p2] exists in the hash map. If yes, we move p1 forward and remove the element s[p1] in the hash map. Finally, p1 will delete and pass the element that s[p2] is pointing to in s[p1:p2]. s[p2] doesn’t exist in the hash map again. s[p2] is added to hash map again. And p2 moves forward.
 
