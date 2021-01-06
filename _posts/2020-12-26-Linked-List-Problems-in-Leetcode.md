@@ -2,7 +2,7 @@
 layout: post
 title: Linked List Problems in Leetcode
 card-image: /assets/images/linked_list_leetcode/linked_list.png
-abstract: A brief summary of linked list problems in Leetcode.
+abstract: A summary of linked list problems in Leetcode.
 category: Algorithm
 ---
 
