@@ -8,7 +8,7 @@ permalink: /about/
 # About
 
 I am currently working at Lyft as a software engineer. Before I was a data scientist at Lidl. I finished my computer science master at FU Berlin with a specialization in machine learning and deep learning. During my master study, I was a student assistant in workgroup mathematics of machine learning
-<a href="/assets/cv/YuHe-cv-2020.pdf" target="_blank">(Resume).</a>
+<a href="/assets/cv/YuHe-cv-2022.pdf" target="_blank">(Resume).</a>
 
 Python is my primary programming language. Numpy, Pandas, sklearn, Matplotlib are Python libraries that I use every day. As for the deep learning framework I use Keras. I also have experience in backend development using Flask and Fastapi. In my free time, I enjoy doing leetcode in Python. So far I have finished 500 leetcode problems.
 
