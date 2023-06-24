@@ -79,6 +79,7 @@ div.wrapper-cards:hover{
   border: 2px solid #000000;
   background-color: #e6e6e6;
   border-radius: 10px;
+  cursor: pointer;
 }
 .post-date{
   margin: 0;
@@ -171,7 +172,8 @@ nav>button{
   font-size: medium;
   background-color: #ffffff;
   margin: 0px 50px 10px 50px;
-  color: #4d4b4b
+  color: #4d4b4b;
+  cursor: pointer;
 }
 .btn.active {
   color: #000000;
@@ -196,6 +198,7 @@ div.category-wrapper-cards:hover{
   border: 2px solid #000000;
   background-color: #e6e6e6;
   border-radius: 10px;
+  cursor: pointer;
 }
 div.category-wrapper-cards:hover .post-date{
   visibility: hidden;
