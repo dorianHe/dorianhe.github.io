@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Hello World
-card-image: /assets/images/hello_world/card-image.jpeg
+card-image: /assets/images/hello_world/card-image.jpg
 abstract: Who am I, what do I do, and why do I create this blog.
 category: Life
 ---
