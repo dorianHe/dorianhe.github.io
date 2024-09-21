@@ -1,36 +1,19 @@
-{%if page.url == "/category/" %}
-<div class="title-bar">
-    <!-- <a href="{{ site.baseurl }}/" class="site-avatar"><img class="avatar" src="{{ site.avatar }}" /></a> -->
-    <div class="site-info">
-        <h1 class="site-name"><a href="{{ site.baseurl }}/">{{ site.name }}</a></h1>
-    </div>
+{%if page.url == "/category/" %} {% include nav.html %}
+<div id="topics-selection">
+  <button id="default" class="btn active" onclick="filterSelection('all')">
+    All
+  </button>
+  {% for category in site.categories %}
+  <button
+    id="{{category[0]}}"
+    class="btn"
+    onclick="filterSelection('{{ category[0] }}')"
+  >
+    {{ category[0] }}
+  </button>
+  {% endfor %}
 </div>
-<nav id="myBtnContainer">
-    <button id="default" class="btn active" onclick="filterSelection('all')"> All</button>
-    {% for category in site.categories%}
-    <button class="btn" onclick="filterSelection('{{category[0]}}')">{{category[0]}}</button>
-    {% endfor %}
-</nav>
-{% elsif page.url == "/about/" %}
-<div class="title-bar">
-    <!-- <a href="{{ site.baseurl }}/" class="site-avatar"><img class="avatar" src="{{ site.avatar }}" /></a> -->
-    <div class="site-info">
-        <h1 class="site-name"><a href="{{ site.baseurl }}/">{{ site.name }}</a></h1>
-    </div>
-</div>
-<nav>
-    <a href="{{ site.baseurl }}/category">Categories</a>
-    <a href="{{ site.baseurl }}/about" style="font-weight: bold; color: #000000;">About</a>
-</nav>
-{% else %}
-<div class="title-bar">
-    <!-- <a href="{{ site.baseurl }}/" class="site-avatar"><img class="avatar" src="{{ site.avatar }}" /></a> -->
-    <div class="site-info">
-        <h1 class="site-name"><a href="{{ site.baseurl }}/">{{ site.name }}</a></h1>
-    </div>
-</div>
-<nav>
-    <a href="{{ site.baseurl }}/category">Categories</a>
-    <a href="{{ site.baseurl }}/about">About</a>
-</nav>
-{% endif %}
+{% elsif page.url == "/about/" %} {% include nav.html %} {% elsif page.url ==
+"/" %} {% include nav.html %}
+<div class="intro">{% include intro.html %}</div>
+{% else %} {% include nav.html %} {% endif %}

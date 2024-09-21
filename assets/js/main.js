@@ -1,43 +1,31 @@
-$(document).ready(function(){
-  document.getElementById("default").click();
-});
+// Function to filter posts by category
+function filterSelection(category) {
+    let posts, i;
 
-$(document).ready(function(){
-  $('.btn').on('click', function(){
-    $('.btn').removeClass('active');
-    $(this).addClass('active');
-  });
-});
+    // Get all the post elements
+    posts = document.getElementsByClassName("post");
 
-function filterSelection(c) {
-  var x, i;
-  x = document.getElementsByClassName("filterDiv");
-  if (c == "all") c = "";
-  for (i = 0; i < x.length; i++) {
-    w3RemoveClass(x[i], "show");
-    if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
-  }
-}
-
-function w3AddClass(element, name) {
-  var i, arr1, arr2;
-  arr1 = element.className.split(" ");
-  arr2 = name.split(" ");
-  for (i = 0; i < arr2.length; i++) {
-    if (arr1.indexOf(arr2[i]) == -1) {
-      element.className += " " + arr2[i];
+    // If 'all' is selected, show all posts
+    if (category === "all") {
+        category = "";
     }
-  }
-}
 
-function w3RemoveClass(element, name) {
-  var i, arr1, arr2;
-  arr1 = element.className.split(" ");
-  arr2 = name.split(" ");
-  for (i = 0; i < arr2.length; i++) {
-    while (arr1.indexOf(arr2[i]) > -1) {
-      arr1.splice(arr1.indexOf(arr2[i]), 1);
+    // Loop through the posts and display or hide based on the category
+    for (i = 0; i < posts.length; i++) {
+        let postCategory = posts[i].getElementsByClassName("post-category")[0];
+
+        if (postCategory && postCategory.textContent.includes(category)) {
+            posts[i].style.display = "block";  // Show matching posts
+        } else {
+            posts[i].style.display = "none";  // Hide non-matching posts
+        }
     }
-  }
-  element.className = arr1.join(" ");
+
+    // Remove "active" class from all buttons and set it for the current one
+    let btns = document.getElementsByClassName("btn");
+    for (i = 0; i < btns.length; i++) {
+        btns[i].classList.remove("active");
+    }
+    console.log(category)
+    document.getElementById(category || "default").classList.add("active");
 }
