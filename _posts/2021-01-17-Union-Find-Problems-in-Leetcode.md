@@ -3,10 +3,10 @@ layout: post
 title: Union-Find Problems in Leetcode
 card-image: /assets/images/union_find/path_compression.png
 abstract: A summary of union-find problems in Leetcode.
-category: Algorithm
+category: Data Structure & Algorithm
 ---
 
-The Union-find data structure also called a disjoint-set data structure, is a data structure that stores a collection of disjoint sets. 
+The Union-find data structure also called a disjoint-set data structure, is a data structure that stores a collection of disjoint sets.
 
 This data structure helps us to solve graph-related problems, for example finding groups of connected components in a graph, which is LC 547. Number of Provinces. As long as the problem asks you to find one or more sets containing non-overlapping elements, a disjoint set might be helpful. e.g. LC 128. Longest Consecutive Sequence.
 

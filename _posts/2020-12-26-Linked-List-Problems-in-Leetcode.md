@@ -3,7 +3,7 @@ layout: post
 title: Linked List Problems in Leetcode
 card-image: /assets/images/linked_list_leetcode/linked_list.png
 abstract: A summary of linked list problems in Leetcode.
-category: Algorithm
+category: Data Structure & Algorithm
 ---
 
 This summary bases on basic (easy / medium) linked-list problems in Leetcode. Those problems are listed below:

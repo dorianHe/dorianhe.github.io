@@ -3,7 +3,7 @@ layout: post
 title: Heap related problems in Leetcode
 card-image: /assets/images/heap_summary/heap_summary.png
 abstract: A summary of heap related problems in Leetcode.
-category: Algorithm
+category: Data Structure & Algorithm
 ---
 
 Why we need a heap? When we use it? Or let's say in which scenarios trying a heap can help you to solve the problem?
