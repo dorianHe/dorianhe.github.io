@@ -9,7 +9,7 @@ In a directed graph, a graph is said to be **strongly connected** if there is 
 
 One of the most efficient algorithms for finding SCCs is **Tarjan Algorithm**. This algorithm is based on Depth-First Search (DFS) and can identify all the SCCs in a graph in linear time. However, to understand Tarjan algorithm, we first need to cover some foundational concepts.
 
-### DFS Tree
+## DFS Tree
 
 When we perform a DFS on a directed graph, the traversal can be organized into a collection of trees called **DFS trees**. These trees represent the nodes visited during the DFS. Importantly, nodes that belong to different DFS trees cannot be part of the same SCC, even if they are connected.
 
@@ -19,7 +19,7 @@ The chart below on the left shows the resulting 2 DFS trees after DFS, where ver
 <img src="/assets/images/scc_and_tarjan/dfs_tree.png" alt="dfs_tree" width="1050px"/>
 </p>
 
-### Back Edges and Cross Edges
+## Back Edges and Cross Edges
 
 Once we have the DFS tree, the edges of the graph can be classified into different types:
 
@@ -89,7 +89,7 @@ if low_link_list[node] == index_list[node]:
     res.append(tmp_res)
 ```
 
-## Key Steps in Tarjan Algorithm:
+### Key Steps in Tarjan Algorithm:
 
 1. For each node in the graph, if it has not been visited, perform a DFS from that node.
 2. During the DFS:
